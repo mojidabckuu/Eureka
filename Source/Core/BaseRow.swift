@@ -67,7 +67,7 @@ open class BaseRow : BaseRowType {
     public var baseCell: BaseCell! { return nil }
     
     /// The untyped value of this row.
-    public var baseValue: Any? {
+    open var baseValue: Any? {
         set {}
         get { return nil }
     }

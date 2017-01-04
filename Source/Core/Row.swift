@@ -66,7 +66,7 @@ open class RowOf<T: Equatable>: BaseRow {
     }
 
     /// The untyped value of this row.
-    public override var baseValue: Any? {
+    open override var baseValue: Any? {
         get { return value }
         set { value = newValue as? T }
     }
